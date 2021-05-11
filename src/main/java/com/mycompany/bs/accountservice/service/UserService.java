@@ -29,7 +29,7 @@ public class UserService {
 	public void setUp() {
 		IntStream
 			.range(1, 10)
-			.forEach(i -> users.add(new UserDto(i, "username"+i, "FirstName"+i, "LastName"+i)));
+			.forEach(i -> users.add(new UserDto(i, "user"+i, "FirstName"+i, "LastName"+i)));
 	}
 
 }

@@ -1,7 +1,6 @@
 server:
   servlet:
     context-path: /bs-account-service
-    
 logging:
   file:
     name: account-service.log
@@ -10,4 +9,3 @@ logging:
   level:
     root: warn
     com.mycompany.bs: debug
-  
