@@ -1,13 +1,13 @@
-package com.mycompany.bsaccountservice;
+package com.mycompany.bs.accountservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class BsAccountServiceApplication {
+public class AccountServiceApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(BsAccountServiceApplication.class, args);
+		SpringApplication.run(AccountServiceApplication.class, args);
 	}
 
 }
