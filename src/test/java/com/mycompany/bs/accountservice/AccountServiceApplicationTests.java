@@ -1,10 +1,10 @@
-package com.mycompany.bsaccountservice;
+package com.mycompany.bs.accountservice;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class BsAccountServiceApplicationTests {
+class AccountServiceApplicationTests {
 
 	@Test
 	void contextLoads() {
