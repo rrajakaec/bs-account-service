@@ -1,7 +1,6 @@
 package com.mycompany.bs.accountservice.api;
 
 import static org.springframework.http.HttpStatus.OK;
-import java.util.Arrays;
 import java.util.List;
 import javax.annotation.Resource;
 import org.springframework.http.HttpStatus;
@@ -30,10 +29,5 @@ public class AccountController {
 		return new ResponseEntity<>(userService.getAllUsers(), HttpStatus.OK);
 	}
 	
-	@GetMapping("/accounts")
-	public ResponseEntity<List<String>> getAllAccounts() {
-		final List<String> users = Arrays.asList("munni", "pintu", "rintu");
-		return new ResponseEntity<>(users, HttpStatus.OK);
-	}
 
 }
