@@ -7,7 +7,9 @@ import java.util.stream.IntStream;
 import javax.annotation.PostConstruct;
 import org.springframework.stereotype.Service;
 import com.mycompany.bs.accountservice.dto.UserDto;
+import lombok.extern.apachecommons.CommonsLog;
 
+@CommonsLog
 @Service
 public class UserService {
 	
@@ -18,6 +20,7 @@ public class UserService {
 	}
 	
 	public UserDto getUser(String username) {
+		log.info("Getting an user with username: " + username);
 		return users
 				.stream()
 				.filter(u -> username.equals(u.getUsername()))
@@ -30,6 +33,7 @@ public class UserService {
 		IntStream
 			.range(1, 10)
 			.forEach(i -> users.add(new UserDto(i, "user"+i, "FirstName"+i, "LastName"+i)));
+		log.info("Initial user setup: " + users);
 	}
 
 }
